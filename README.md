@@ -1,4 +1,4 @@
-# Qvantel Webshop Assignment!
+# Qvantel Webshop Assignment
 
 This is a base for a programming assignment from Qvantel.
 
@@ -14,6 +14,8 @@ Webpage stores the following details of an item in the cart to a database:
 additional details stored:
 (i) Timestamp
 
+# Actie Paths: 
+http://127.0.0.1:5000/item_details Link to the web page for storing details of an item
 
 # Special Instructions for installation:
 Create a database with the following name before running the program:
