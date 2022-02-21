@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <br> 
+    <br> Item entries: save your item details. Enter (and save) separately for each item.
+    <br>
+    <br>
+    <form method="post" action="/save_in_database">
+        <br>
+        ITEM DETAILS
+        <br>
+        <br>
+
+        <label for="itemid">Item id:</label><br>
+        <input type="text" id="itemid" name="itemid" value={{ request.form['itemid'] }}><br>
+
+        <label for="itemname">Item name:</label><br>
+        <input type="text" id="itemname" name="itemname" value={{ request.form['itemname'] }}><br>
+
+        <label for="price">Price of Item:</label><br>   
+        <input type="number" id="price" name="price" value={{ request.form['price'] }}><br>
+
+        <br>
+        <select id="country_dropdown" name="country_name" required >
+        {% for option in options %}
+        <option value="{{ option }}">{{ option }}</option>
+        {% endfor %}
+        </select>
+        <br>
+
+       
+        <br>
+        <br>
+
+        <input type="submit" value="Save"/>
+        <br>
+        <br>
+        <br>
+    </form>
+    <br>
+    <a href="/item_details">Refresh</a>
+    </body>
+</html>
